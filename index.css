@@ -1,0 +1,239 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #D8DFE8;
+}
+
+
+input::placeholder{
+    color: #0A3871; 
+}
+textarea::placeholder{
+    color: #0A3871;
+    font-size: 24px;
+    top: 200px;
+}
+
+.container{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    padding: 10px;
+    height: 100vh;
+}
+
+.texto{
+    background-color: white;
+    height: 95%;
+    border-radius: 32px;
+    grid-area: 1/ 3 / 4 / 4;
+    padding: 0 30px;
+    text-align: center;
+    text-shadow: 10px;
+    box-shadow: rgba(100, 100, 111, 0.253) 0px 34px 32px -8px;
+}
+
+.muneco{
+    margin-top: 50%;
+    width: 100%;
+}
+
+.containerinput{
+    margin-right: 100px;
+}
+
+.textoArea{
+    text-align: center;
+}
+
+.parrafo{
+    color: rgba(73, 80, 87, 1);
+}
+
+.titulo{
+    color: rgba(52, 58, 64, 1);
+}
+
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-size: 24px;
+    height: 60vh;
+    padding-top: 100px;
+}
+
+.botones{
+    align-items: center;
+    text-align: center;
+}
+
+.enctrypt{
+    padding: 0 10px;
+    width: 324px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: rgba(10, 56, 113, 1);
+    color: rgba(255, 255, 255, 1) ;
+    cursor: pointer;
+}
+.unctrypt{
+    padding: 0 10px;
+    width: 324px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: rgba(216, 223, 232, 1);
+    color:rgba(10, 56, 113, 1) ;
+    cursor: pointer;
+
+}
+
+.warning{
+    font-size: 10px;
+    display: flex;
+}
+
+.icono{
+    width: 10px;
+    padding: 0px 5px 1px 0;
+}
+
+.textoCifrado{
+    font-size: 24px;
+    color: rgba(73, 80, 87, 1);
+    height: 80%;
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+    display: none;
+
+}
+
+.copy{
+    padding: 0 10px;
+    width: 300px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: white;
+    color:rgba(10, 56, 113, 1) ;
+    cursor: pointer;
+    top: 885px;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .muneco {
+        display: none; 
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .containerinput {
+        margin-right: 0; 
+    }
+    .botones {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .texto{
+        background-color: white;
+        border-radius: 32px;
+        grid-area: 1/ 3 / 4 / 4;
+        padding: 20px 30px;
+        margin-top: 20px;
+        text-align: center;
+        text-shadow: 10px;
+        box-shadow: rgba(100, 100, 111, 0.253) 0px 34px 32px -8px;
+    }
+    
+    .imagenLogo{
+        align-items: start;
+    }
+
+    textarea {
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+        font-size: 24px;
+        height: 60vh;
+        padding-left: 50px;
+    }
+
+    .warning{
+        padding-left: 50px;
+    }
+    
+    .copy{
+        padding: 0 0px;
+        width: 500px;
+        height: 67px;
+        border-radius: 24px;
+        background-color: white;
+        color:rgba(10, 56, 113, 1) ;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .muneco {
+        display: none; 
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .botones {
+        display: flex;
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .enctrypt{
+        margin: 10px 10px;
+    }
+    .unctrypt{
+        margin: 0 10px;
+    }
+
+    textarea {
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+        font-size: 24px;
+        height: 40vh;
+        width: 90%;
+    }
+    .texto{
+        background-color: white;
+        border-radius: 32px;
+        grid-area: 1/ 3 / 4 / 4;
+        padding: 20px 30px;
+        margin-top: 20px;
+        text-align: center;
+        text-shadow: 10px;
+        box-shadow: rgba(100, 100, 111, 0.253) 0px 34px 32px -8px;
+
+    }
+    .copy{
+        padding: 0 0px;
+        width: 300px;
+        height: 67px;
+        border-radius: 24px;
+        background-color: white;
+        color:rgba(10, 56, 113, 1) ;
+        cursor: pointer;
+        display: none;
+    }
+}
