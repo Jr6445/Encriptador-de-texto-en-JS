@@ -179,6 +179,10 @@ textarea {
         cursor: pointer;
         display: none;
     }
+    .textoCifrado{
+        height: 8vh;
+    
+    }
 }
 
 @media screen and (max-width: 414px) {
